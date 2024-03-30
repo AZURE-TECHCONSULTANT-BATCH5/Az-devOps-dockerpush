@@ -8,6 +8,9 @@
 trigger:
 - main
 
+resources:
+- repo: self
+
 # Variables
 variables:
   tag: '$(Build.BuildId)'
@@ -26,7 +29,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'manual-emmacontainer-svc'
-        repository: 'custom2aksnginxapp1'
+        repository: 'custom1aksnginxapp1'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: 
