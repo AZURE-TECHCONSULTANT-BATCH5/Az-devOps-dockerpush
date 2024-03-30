@@ -8,8 +8,6 @@
 trigger:
 - main
 
-resources:
-- repo: self
 
 # Variables
 variables:
@@ -29,12 +27,12 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'manual-emmacontainer-svc'
-        repository: 'custom1aksnginxapp1'
+        repository: 'custom2aksnginxapp1'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: 
           $(tag)
-          $(Build.sourceVersion)
+          
 ## Publish Artifacts pipeline code in addition to Build and Push  
     - bash: echo Contents in System Default Working Directory; ls -R $(System.DefaultWorkingDirectory)        
     - bash: echo Before copying Contents in Build Artifact Directory; ls -R $(Build.ArtifactStagingDirectory)        
