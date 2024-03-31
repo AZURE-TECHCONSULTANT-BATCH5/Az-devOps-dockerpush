@@ -1,0 +1,20 @@
+# development-namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev
+
+---
+  # prod-namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: prod
+
+---
+
+  # qa-namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: qa
