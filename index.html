@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Capstone Background</title>
-    <!-- Add your CSS links here -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width,
+    initial-scale=1.0,shrink-to-fit"
+        />
+        <title>Todo App</title>
+        <link rel="icon" href="https://m-enes.github.io/todo-app/favicon.ico" type="image/x-icon"/>
+        <link
+            rel="stylesheet"
+            href="sources/bootstrap-4.5.2-dist/css/bootstrap.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-    <!-- Your HTML content goes here -->
-</body>
-</html>
-
-</head>
-<body style="background-color: rgb(5, 6, 0); color: rgba(255, 255, 255, 0.866);">
-    <div class="text-center">
-        <h1 class="display-4" style="color: #f4f3f3c1;"> happy Project Capstone 2025: A Journey of Innovation: <version:3>V3</version:3>1<V2 class="10"></V3></h1>
-        <p>As we embark on this momentous journey, I am filled with gratitude for the unwavering support and dedication of each member of our team. Together, we have ventured into uncharted territories, overcoming obstacles and reaching new heights.</p>
-        
-        <p>Project Capstone symbolizes not just the culmination of our efforts, but the spirit of collaboration, innovation, and resilience that defines us. It represents the synergy of minds, the fusion of ideas, and the relentless pursuit of excellence.</p>
-        
-        <p>As an Azure Architecture and DevOps Engineer, I have witnessed firsthand the transformative power of technology. Our journey with Azure has been nothing short of remarkable, as we harness its capabilities to architect robust solutions and streamline our development processes.</p>
-        
-        <p>To my esteemed colleagues, I extend my heartfelt appreciation for your dedications and hard work. Each one of you has played an integral role in shaping our success, and for that, I am truly grateful.</p>
-        
-        <p>As we celebrate our achievements today, let us also look to the future with renewed vigor and determination. There will undoubtedly be challenges ahead, but I am confident that together, we will conquer them.</p>
-        
-        <p>I pledge to continue working alongsides each of you, navigating the complexities of our field with grace and tenacity. Togetherness, we will forge ahead, pushing the boundaries of what is possible and leaving a lasting impact on the world.</p>
-        
-        <p>Thank you once again for your unwavering support Here's to the next chapter of our journey! version 03: <span style="font-weight: bold;"><V1 class="1"></V1>01</span></p>
-    </div>
-</body>
+    <body class="bg-light">
+        <div class="container">
+            <div class="header">
+                <h1 class="text-center display-1">Hello, let's make this!</h1>
+            </div>
+            <div class="container paddingContainer">
+                <ul id="todolist"></ul>
+                <input type="text" id="todo-input" />
+                <button class="btn btn-primary" onclick="addTodo()">
+                    Add Todo
+                </button>
+                <button
+                    class="btn btn-danger"
+                    id="unshow-finished-todos"
+                    onclick="unshowFinishedTodos()"
+                >
+                    Unshow Finished Todos
+                </button>
+            </div>
+        </div>
+    </body>
+    <script src="sources/bootstrap-4.5.2-dist/js/jquery-3.5.1.js"></script>
+    <script src="sources/bootstrap-4.5.2-dist/js/bootstrap.js"></script>
+    <script src="script.js"></script>
 </html>
